@@ -141,7 +141,7 @@ function makeNewChar()
     function setupName()
         local setName = "SetName"
 
-        workspace.ReplicatedStorage.RemoteEvent:FireServer(setName, name)
+        workspace.Replication.RemoteEvent:FireServer(setName, name)
     end
 
     findMorphs()
