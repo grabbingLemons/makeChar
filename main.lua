@@ -1,5 +1,9 @@
 -- NEW TEST
-branch = "main"
+
+--[[
+     !!SCROLL TO BOTTOM TO PICK CHARACTER!! 
+]]
+local branch = "master"
 --[[
     Does not include race switching
     Does not include use of in-game hats
@@ -65,12 +69,14 @@ hats = {
         gambeson skirt thing - game:GetService("ReplicatedStorage").Assets.Gamepasses.Premium.Bottoms.Bottom2
 ]]
 
+
+
 clothes = {
     [1] = {
-        ["model"] = top
+        ["model"] = game:GetService("ReplicatedStorage").Assets.Gamepasses.Premium.Tops.Top1
     },
     [2] = {
-        ["model"] = bottom
+        ["model"] = game:GetService("ReplicatedStorage").Assets.Gamepasses.Premium.Bottoms.Bottom1
     }
 }
 
@@ -79,26 +85,6 @@ clothes = {
 -- Uses HSV
 topColor = Color3.new(0, 0, 0)
 bottomColor = Color3.new(0, 0, 0)
-
---[[
-    Choices are:
-    newChar,
-    mushy,
-    vincent
-
-    put choice between parenthesis
-]]
-pickTemplate(newChar)
-
-
-function pickTemplate(choice)
-    if tostring(choice) == "newChar" then
-        makeNewChar()
-    else
-        return loadstring((game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/%s/templates/%s.lua")):format(branch, choice)), choice .. '.lua')()
-    end
-end
-
 
 function makeNewChar()
     local player = game.Players.LocalPlayer.Name 
@@ -164,3 +150,19 @@ function makeNewChar()
     addHats()
     setupName()
 end
+
+
+
+function pickTemplate(choice)
+    if tostring(choice) == "newChar" then
+        makeNewChar()
+    else
+        rconsoleprint()
+        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/%s/characters/%s.lua"):format(branch, choice)) .. '.lua')()
+    end
+end
+
+
+pickTemplate("newChar")
+
+

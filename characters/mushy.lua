@@ -24,7 +24,7 @@ clothes = {
 topColor = Color3.new(1, 0.121569, 0.172549)
 bottomColor = Color3.new(0.898039, 0.894118, 0.87451)
 
-makeChar()
+makeNewChar()
 
 function makeNewChar()
     local player = game.Players.LocalPlayer.Name 
@@ -79,7 +79,7 @@ function makeNewChar()
     function setupName()
         local setName = "SetName"
 
-        workspace.ReplicatedStorage.RemoteEvent:FireServer(setName, name)
+        workspace.Replication.RemoteEvent:FireServer(setName, name)
     end
 
     findMorphs()
@@ -88,3 +88,4 @@ function makeNewChar()
     addHats()
     setupName()
 end
+
