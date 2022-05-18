@@ -22,15 +22,6 @@ clothes = {
 topColor = Color3.new(1, 0.121569, 0.172549)
 bottomColor = Color3.new(0.898039, 0.894118, 0.87451)
 
---[[
-    Choices are:
-    newChar,
-    mushy,
-    vincent
-
-    put choice between parenthesis
-]]
-
 makeChar()
 
 function makeNewChar()
