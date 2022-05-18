@@ -5,7 +5,11 @@ This script's main and only use is to easily use characters I have made or make 
 
 ## SCRIPT
 
+<<<<<<< HEAD
 ```lua
+=======
+``lua
+>>>>>>> 9c1747c9e64cedeff9ba7051b39ef6bff62043aa
 --[[
      !!SCROLL TO BOTTOM TO PICK CHARACTER!! 
 ]]
@@ -31,4 +35,8 @@ end
 ]]
 
 pickCharacter("mushy")
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 9c1747c9e64cedeff9ba7051b39ef6bff62043aa

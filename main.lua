@@ -1,5 +1,3 @@
--- NEW TEST
-
 --[[
      !!SCROLL TO BOTTOM TO PICK CHARACTER!! 
 ]]
@@ -24,4 +22,4 @@ end
         ...and more to come soon
 ]]
 
-pickCharacter("guard")
+pickCharacter("mushy")
