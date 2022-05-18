@@ -24,7 +24,7 @@ name = "A Basic Guard Template"
      0000, 0001, 0002 ... so on and so forth; add them between the curcly brackets 
 ]]
 hats = {
-
+    5591231798, 5830159448, 5270699726, 5857723500, 5858010220
 }
 
 --[[
@@ -104,7 +104,7 @@ clothes = {
 
 -- Colors for your shirt and pants
 -- Uses HSV
-topColor = Color3.new(0.047058, 0.125490, 0.505882)
+topColor = Color3.new(0.388235, 0.372549, 0.384314)
 bottomColor = Color3.new(0, 0, 0)
 hatColor = Color3.new(0.388235, 0.372549, 0.384314)
 accessoryColor = Color3.new(0.294117, 0.003921, 0.003921)

@@ -213,4 +213,4 @@ end
 ]]
 
 
-pickTemplate("vincent")
+pickTemplate("guard")
