@@ -157,11 +157,19 @@ function pickTemplate(choice)
     if tostring(choice) == "newChar" then
         makeNewChar()
     else
-        rconsoleprint()
         loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/%s/characters/%s.lua"):format(branch, choice)) .. '.lua')()
     end
 end
 
+
+--[[
+    Available choices:
+        newChar
+        mushy
+        vincent
+
+        and more to come soon
+]]
 
 pickTemplate("newChar")
 
