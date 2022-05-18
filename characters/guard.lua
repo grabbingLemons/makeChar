@@ -24,7 +24,7 @@ name = "A Basic Guard Template"
      0000, 0001, 0002 ... so on and so forth; add them between the curcly brackets 
 ]]
 hats = {
-    5591231798, 5830159448, 5270699726, 5857723500, 5858010220
+    5591231798, 4820120408, 5830159448, 5270699726, 5857723500, 5858010220
 }
 
 --[[
@@ -43,7 +43,7 @@ ingameHats = {
 
 ingameAccessories = {
     [1] = {
-        ["model"] = game:GetService("ReplicatedStorage").Assets["Base Game"].Equipments.Equipment10
+        ["model"] = nil
     }
 }
 
