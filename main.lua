@@ -24,6 +24,11 @@ hats = {
 }
 
 --[[
+    Add the FaceID you wish to use, for no face leave at 0 or nil
+]]
+    face = 0
+
+--[[
     !! YOU MUST OWN THE  GAMEPASSES TO USE THE CLOTHES FROM !!
 
     Clothes are a little iffy since there's no real easy way to change them without going...
@@ -127,7 +132,8 @@ function makeNewChar()
     
     function addClothes()
         -- add the clothes
-        local morphAdd = "MorphModels"   
+        local morphAdd = "MorphModels"
+        local changeFace = "ChangeFace"   
         local apply = "ApplyColor"
         local top, bottom = "Top", "Bottom"
 
@@ -136,6 +142,7 @@ function makeNewChar()
         -- color the clothes
         workspace.Replication.RemoteEvent:FireServer(apply, top, topColor)
         workspace.Replication.RemoteEvent:FireServer(apply, bottom, bottomColor)
+        game:GetService("ReplicatedStorage").Remotes.Donor.RemoteEvent:FireServer(changeFace, face)
     end
 
     function addHats()

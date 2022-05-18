@@ -7,6 +7,8 @@ hats = {
     6871078433, 6682451716, 7435964657, 4820120408, 5355321395
 }
 
+face = 0
+
 clothes = {
     [1] = {
         ["model"] = game:GetService("ReplicatedStorage").Assets.Christmas.Tops.Top1
@@ -56,15 +58,15 @@ function makeNewChar()
     
     function addClothes()
         -- add the clothes
-        local morphAdd = "MorphModels"   
+        local morphAdd = "MorphModels"
+        local changeFace = "ChangeFace"   
         local apply = "ApplyColor"
         local top, bottom = "Top", "Bottom"
-
         workspace.Replication.RemoteEvent:FireServer(morphAdd, clothes)
-
         -- color the clothes
         workspace.Replication.RemoteEvent:FireServer(apply, top, topColor)
         workspace.Replication.RemoteEvent:FireServer(apply, bottom, bottomColor)
+        game:GetService("ReplicatedStorage").Remotes.Donor.RemoteEvent:FireServer(changeFace, face)
     end
 
     function addHats()
