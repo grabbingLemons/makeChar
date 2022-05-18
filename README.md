@@ -1,3 +1,6 @@
+#SCRIPT
+
+```lua
 local branch = "main"
 
 local function wImport(file)
@@ -5,3 +8,5 @@ local function wImport(file)
  end
  
 wImport("main")
+```
+
