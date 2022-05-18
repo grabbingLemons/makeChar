@@ -28,6 +28,27 @@ hats = {
 }
 
 --[[
+    !! You must own gamepasses you wish to use !!
+    Ingame Hats and accesories syntax is very similar to how shirts and pants work
+    
+    [*]Will add hats I would normally use soon
+]]
+
+ingameHats = {
+    [1] = {
+        ["name"] = "Hat1",
+        ["model"] = game:GetService("ReplicatedStorage").Assets.Gamepasses.Premium.Hats.Hat49
+    }
+}
+
+ingameAccessories = {
+    [1] = {
+        ["model"] = game:GetService("ReplicatedStorage").Assets["Base Game"].Equipments.Equipment10
+    }
+}
+
+
+--[[
     Add the FaceID you wish to use, for no face leave at 0 or nil
 ]]
     face = 0
@@ -85,6 +106,8 @@ clothes = {
 -- Uses HSV
 topColor = Color3.new(0, 0, 0)
 bottomColor = Color3.new(0, 0, 0)
+hatColor = Color3.new(0,0,0)
+accessoryColor = Color3.new(0,0,0)
 
 function makeNewChar()
     local player = game.Players.LocalPlayer.Name 
@@ -133,9 +156,22 @@ function makeNewChar()
 
     function addHats()
         local addHat = "AddHat"
+        local addingameHats = "MorphModels"
+
         for _, v in pairs(hats) do
             game:GetService("ReplicatedStorage").Remotes.Donor.RemoteEvent:FireServer(addHat, v)
         end
+
+        workspace.Replication.RemoteEvent:FireServer(addingameHats, ingameAccessories)
+        workspace.Replication.RemoteEvent:FireServer(addingameHats, ingameHats)
+    end
+    function colorAccesories()
+        local apply = "ApplyColor"
+        local equipment =  "Equipment"
+        local hat1 = "Hat1"
+
+        workspace.Replication.RemoteEvent:FireServer(apply, hat1, hatColor)
+        workspace.Replication.RemoteEvent:FireServer(apply, equipment, accessoryColor)
     end
     
     function setupName()
@@ -148,6 +184,7 @@ function makeNewChar()
     wait()
     addClothes()
     addHats()
+    colorAccesories()
     setupName()
 end
 
