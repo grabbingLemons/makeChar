@@ -22,4 +22,4 @@ end
         ...and more to come soon
 ]]
 
-pickCharacter("mushy")
+pickCharacter("choice")
