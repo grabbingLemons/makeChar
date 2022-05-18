@@ -11,7 +11,7 @@ local branch = "master"
 ]]
 
 
-function pickTemplate(choice)
+function pickCharacter(choice)
     loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/%s/characters/%s.lua"):format(branch, choice)), choice .. '.lua')()
 end
 
@@ -21,9 +21,7 @@ end
         mushy
         vincent
         guard
-
-        and more to come soon
+        ...and more to come soon
 ]]
 
-
-pickTemplate("guard")
+pickCharacter("guard")

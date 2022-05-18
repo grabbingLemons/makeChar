@@ -16,7 +16,7 @@ local branch = "master"
         \' -  Same as quotes.
         \n - Separates with a new line
 ]]
-name = "A Basic Guard Template"
+name = "A 5\'7\" Guard armed with a polearm and an arming sword."
 
 --[[ 
     !! You must own donor to use it !!
