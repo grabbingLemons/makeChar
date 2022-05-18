@@ -153,11 +153,15 @@ end
 
 
 
+
+
 function pickTemplate(choice)
     if tostring(choice) == "newChar" then
         makeNewChar()
     else
-        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/%s/characters/%s.lua"):format(branch, choice)) .. '.lua')()
+        print(choice)
+        print(branch)
+        loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/%s/characters/%s.lua"):format(branch, choice)), choice .. '.lua')()
     end
 end
 
@@ -171,6 +175,5 @@ end
         and more to come soon
 ]]
 
-pickTemplate("newChar")
 
-
+pickTemplate("vincent")
