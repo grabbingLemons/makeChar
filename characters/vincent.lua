@@ -1,7 +1,7 @@
 --[[
    !! VINCENT CHARACTER LOADER !!
 ]]
-name = "\" Vincent Ashburn \" \nA Middle-aged rough looking man standing at about 5\'8\". The man has very coarse hands along with an irate looking face shrouded with few scars and a thick beard."
+name = "\" Vincent Ashburn \" \nA Middle-aged rough looking man standing at about 5\'7\". The man has very coarse hands along with an irate looking face shrouded with few scars and a thick beard."
 
 hats = {
     6871078433, 6682451716, 7435964657, 4820120408, 5355321395
