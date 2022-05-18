@@ -24,7 +24,6 @@ clothes = {
 topColor = Color3.new(1, 0.121569, 0.172549)
 bottomColor = Color3.new(0.898039, 0.894118, 0.87451)
 
-makeNewChar()
 
 function makeNewChar()
     local player = game.Players.LocalPlayer.Name 
@@ -89,3 +88,4 @@ function makeNewChar()
     setupName()
 end
 
+makeNewChar()

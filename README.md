@@ -18,7 +18,6 @@ pickCharacter("mushy")
 
 
 ## UPDATES:
-
     Does not include race switching
     Added support for  in-game hats
 
