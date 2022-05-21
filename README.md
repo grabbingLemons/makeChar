@@ -23,7 +23,9 @@ pickCharacter("mushy")
 
 
 ## CHOICES
-    Current Available Choices:
-        Mushy[mushroom boy]
-        Vincent[rich merchant boy]
-        Guard[basic guard boy]
+   ─┐Current Available Choices:
+    ───┐Mushy[mushroom boy]
+    ───┐Vincent[rich merchant boy]
+    ───┐Guard[basic guard boy]
+
+    
