@@ -18,14 +18,14 @@ pickCharacter("mushy")
 
 
 ## UPDATES:
-    Does not include race switching
-    Added support for  in-game hats
+    ─┐ Does not include race switching
+    ─┐ Added support for  in-game hats
 
 
 ## CHOICES
-   ─┐Current Available Choices:
-   
-    ──┐Mushy[mushroom boy]
-    ──┐Vincent[rich merchant boy]
-    ──┐Guard[basic guard boy]
+   ─┐ Current Available Choices:
+
+    ──┐ Mushy[mushroom boy]
+    ──┐ Vincent[rich merchant boy]
+    ──┐ Guard[basic guard boy]
 
