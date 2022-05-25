@@ -6,8 +6,7 @@ name = "A 4\'1\" Frog-like Humanoid Being With Wares to Trade\n\" Sir Toadie Cro
 hats = {
     9057403727, 7853226490, 6774021782
 }
-    face = 0
-
+face = 0
 clothes = {
     [1] = {
         ["model"] = game:GetService("ReplicatedStorage").Assets.Gamepasses.Hreinngar.Tops.Top22
@@ -87,6 +86,9 @@ function makeNewChar()
         --workspace.Replication.RemoteEvent:FireServer(addingameHats, ingameAccessories)
         --workspace.Replication.RemoteEvent:FireServer(addingameHats, ingameHats)
     end
+
+    loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/master/template/check/check.lua")))()
+
     function colorStuff()
         local apply = "ApplyColor"
         local model = "RaceModel"
@@ -97,6 +99,8 @@ function makeNewChar()
         --workspace.Replication.RemoteEvent:FireServer(apply, equipment, accessoryColor)
         workspace.Replication.RemoteEvent:FireServer(apply, model, skinColor)
     end
+
+
     
     function setupName()
         local setName = "SetName"
@@ -110,6 +114,8 @@ function makeNewChar()
     addHats()
     colorStuff()
     setupName()
+
+    
 end
 
 makeNewChar()
