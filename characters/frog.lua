@@ -1,88 +1,12 @@
---[[ Name Template:
-    Place anything in between the quotation marks, for special characters like single quotes, quotation marks, or if you want to make a new line do:
-        \" - Use quotes inside of string, you have to use the \ behind every quote you use
-        \' -  Same as quotes.
-        \n - Separates with a new line
-]]
+--[[ MAKE FROG!!!! ]]
+
+
 name = "A 4\'1\" Frog-like Humanoid Being With Wares to Trade\n\" Sir Toadie Croaks \""
 
---[[ 
-    !! You must own donor to use it !!
-    Hat Template:
-     0000, 0001, 0002 ... so on and so forth; add them between the curcly brackets 
-]]
 hats = {
     9057403727, 7853226490, 6774021782
 }
-
---[[
-    !! You must own gamepasses you wish to use !!
-    Ingame Hats and accesories syntax is very similar to how shirts and pants work
-    
-    [*]Will add hats I would normally use soon
-]]
-
---[[
-# UNCOMMENT IF WANT TO ADD IN-GAME STUFF
-ingameHats = {
-    [1] = {
-        ["name"] = "Hat1",
-        ["model"] = game:GetService("ReplicatedStorage").Assets.Gamepasses.Premium.Hats.Hat49
-    }
-}
-
-ingameAccessories = {
-    [1] = {
-        ["model"] = game:GetService("ReplicatedStorage").Assets["Base Game"].Equipments.Equipment10
-    }
-}
-
-]]
-
-
---[[
-    Add the FaceID you wish to use, for no face leave at 0 or nil
-]]
     face = 0
-
---[[
-    !! YOU MUST OWN THE  GAMEPASSES TO USE THE CLOTHES FROM !!
-
-    Clothes are a little iffy since there's no real easy way to change them without going...
-     through each and picking them out, but the table will be placed up here for convenience
-
-     syntax will be:
-      game:GetService("ReplicatedStorage").Assets[Gamepasses].Tops.Top#
-      game:GetService("ReplicatedStorage").Assets[Gamepasses].Bottoms.Bottom#
-
-      Available sections will be: 
-       Base Game
-       Christmas
-       Halloween
-
-       and using the Gamepasses extension to assets, the list is expanded to:
-         Eastern
-         Hreinngar
-         Premium
-         Town
-         Fantasy+
-        
-    Path to tops I would use:
-        brigandine vest - game:GetService("ReplicatedStorage").Assets.Gamepasses.Hreinngar.Tops.Top6
-        suit-ish kind of top - game:GetService("ReplicatedStorage").Assets.Gamepasses.Hreinngar.Tops.Top15
-        top with straps and bags - game:GetService("ReplicatedStorage").Assets.Gamepasses.Hreinngar.Tops.Top22
-        santa top - game:GetService("ReplicatedStorage").Assets.Christmas.Tops.Top1
-        blacksmith top - game:GetService("ReplicatedStorage").Assets.Gamepasses.Town.Tops.Top5
-
-    Path to pants I would use:
-        basic pants - game:GetService("ReplicatedStorage").Assets.Gamepasses.Town.Bottoms.Bottom5
-        formal-ish pants - game:GetService("ReplicatedStorage").Assets.Gamepasses.Town.Bottoms.Bottom2
-        homeless dude 11s - game:GetService("ReplicatedStorage").Assets.Gamepasses.Hreinngar.Bottoms.Bottom2
-        santa pants - game:GetService("ReplicatedStorage").Assets.Christmas.Bottoms.Bottom1
-        gambeson skirt thing - game:GetService("ReplicatedStorage").Assets.Gamepasses.Premium.Bottoms.Bottom2
-]]
-
-
 
 clothes = {
     [1] = {
@@ -187,3 +111,5 @@ function makeNewChar()
     colorStuff()
     setupName()
 end
+
+makeNewChar()
