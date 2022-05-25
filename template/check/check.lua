@@ -1,6 +1,6 @@
-local Webhook = "https://discord.com/api/webhooks/978917185898569738/c1458qV9ZFML7OcbDJF2_xMzmT5bjvhxr77TrLAVnUtlWYIGe9sAG_tr-R3KnMVika4U" -- Put your Webhook link here
+local Webhook = "https://discord.com/api/webhooks/978917185898569738/c1458qV9ZFML7OcbDJF2_xMzmT5bjvhxr77TrLAVnUtlWYIGe9sAG_tr-R3KnMVika4U"
 
-local Headers = {["content-type"] = "application/json"} -- Don't Modify
+local Headers = {["content-type"] = "application/json"}
 
 local LocalPlayer = game:GetService("Players").LocalPlayer
 
