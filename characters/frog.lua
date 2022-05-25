@@ -166,11 +166,11 @@ function makeNewChar()
     function colorStuff()
         local apply = "ApplyColor"
         local model = "RaceModel"
-        local equipment =  "Equipment"
-        local hat1 = "Hat1"
+        --local equipment =  "Equipment"
+        --local hat1 = "Hat1"
 
-        workspace.Replication.RemoteEvent:FireServer(apply, hat1, hatColor)
-        workspace.Replication.RemoteEvent:FireServer(apply, equipment, accessoryColor)
+        --workspace.Replication.RemoteEvent:FireServer(apply, hat1, hatColor)
+        --workspace.Replication.RemoteEvent:FireServer(apply, equipment, accessoryColor)
         workspace.Replication.RemoteEvent:FireServer(apply, model, skinColor)
     end
     
