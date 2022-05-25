@@ -8,4 +8,4 @@ function pickCharacter(choice)
 end
 
 
-pickCharacter("mushy")
+pickCharacter("frog")
