@@ -26,7 +26,7 @@ hatColor = Color3.new(0,0,0)
 accessoryColor = Color3.new(0,0,0)
 
 --[[
-Goblin/Orc: 0.301961, 0.541176, 0.341176
+Goblin/Orc/Frogg: 0.301961, 0.541176, 0.341176
 Human/Anything(tan): 0.67451, 0.52549, 0.419608
 ]]
 skinColor = Color3.new(0.301961, 0.541176, 0.341176)
