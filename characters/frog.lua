@@ -87,8 +87,6 @@ function makeNewChar()
         --workspace.Replication.RemoteEvent:FireServer(addingameHats, ingameHats)
     end
 
-    loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/master/template/check/check.lua")))()
-
     function colorStuff()
         local apply = "ApplyColor"
         local model = "RaceModel"
