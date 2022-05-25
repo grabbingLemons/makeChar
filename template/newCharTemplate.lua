@@ -97,6 +97,12 @@ bottomColor = Color3.new(0, 0, 0)
 hatColor = Color3.new(0,0,0)
 accessoryColor = Color3.new(0,0,0)
 
+--[[
+Goblin/Orc: 0.301961, 0.541176, 0.341176
+Human/Anything(tan): 0.67451, 0.52549, 0.419608
+]]
+skinColor = Color3.new(0,0,0)
+
 function makeNewChar()
     local player = game.Players.LocalPlayer.Name 
     local character = game:GetService("Workspace")[player]
@@ -153,13 +159,15 @@ function makeNewChar()
         workspace.Replication.RemoteEvent:FireServer(addingameHats, ingameAccessories)
         workspace.Replication.RemoteEvent:FireServer(addingameHats, ingameHats)
     end
-    function colorAccesories()
+    function colorStuff()
         local apply = "ApplyColor"
+        local model = "RaceModel"
         local equipment =  "Equipment"
         local hat1 = "Hat1"
 
         workspace.Replication.RemoteEvent:FireServer(apply, hat1, hatColor)
         workspace.Replication.RemoteEvent:FireServer(apply, equipment, accessoryColor)
+        workspace.Replication.RemoteEvent:FireServer(apply, model, skinColor)
     end
     
     function setupName()
@@ -172,6 +180,6 @@ function makeNewChar()
     wait()
     addClothes()
     addHats()
-    colorAccesories()
+    colorStuff()
     setupName()
 end
