@@ -29,4 +29,5 @@ pickCharacter("mushy")
     ──┐ Mushy[mushroom boy]
     ──┐ Vincent[rich merchant boy]
     ──┐ Guard[basic guard boy]
+    ──┐ Frog[froggy boy]
 ```
